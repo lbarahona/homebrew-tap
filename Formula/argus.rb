@@ -5,21 +5,21 @@
 class Argus < Formula
   desc "AI-powered observability CLI for SREs"
   homepage "https://github.com/lbarahona/argus"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lbarahona/argus/releases/download/v0.7.0/argus_0.7.0_darwin_amd64.tar.gz"
-      sha256 "b74fe7892c18dc8451d9e45b88e59b4eb18f7a7708bf521ab5163a0e41a33d04"
+      url "https://github.com/lbarahona/argus/releases/download/v0.8.0/argus_0.8.0_darwin_amd64.tar.gz"
+      sha256 "00e5974f9551b9f4bebb806a5d2e79a2d17c811f3e22110770ae402fc6223fa6"
 
       define_method(:install) do
         bin.install "argus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lbarahona/argus/releases/download/v0.7.0/argus_0.7.0_darwin_arm64.tar.gz"
-      sha256 "4c4613307d0cca16f004495e8c039601d61ab45b7f8f813cbb5ac21e233b4d43"
+      url "https://github.com/lbarahona/argus/releases/download/v0.8.0/argus_0.8.0_darwin_arm64.tar.gz"
+      sha256 "756c907393054b00bf746bde041a6429cd7fac17a258befec643526ac44d2371"
 
       define_method(:install) do
         bin.install "argus"
@@ -29,15 +29,15 @@ class Argus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lbarahona/argus/releases/download/v0.7.0/argus_0.7.0_linux_amd64.tar.gz"
-      sha256 "3ec21f588f20a5c8dbb3a491644fd9ea501ac4c2e4a49d4d9f0b9f19e99b9916"
+      url "https://github.com/lbarahona/argus/releases/download/v0.8.0/argus_0.8.0_linux_amd64.tar.gz"
+      sha256 "0594cb8d0183f1d63a3c149c4ddd3255a081f69267707f83c6091611b2023855"
       define_method(:install) do
         bin.install "argus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lbarahona/argus/releases/download/v0.7.0/argus_0.7.0_linux_arm64.tar.gz"
-      sha256 "254df43f16cecb75377a2dc189d8613fc242d8b407dd5b012d81a6a739e2ba75"
+      url "https://github.com/lbarahona/argus/releases/download/v0.8.0/argus_0.8.0_linux_arm64.tar.gz"
+      sha256 "5fbe553601d8da669115d39b5a8f2a7121db7eb278f33b01ffd1c2bdd9ea6d5f"
       define_method(:install) do
         bin.install "argus"
       end
